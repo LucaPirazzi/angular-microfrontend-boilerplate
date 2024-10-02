@@ -1,0 +1,64 @@
+<style>
+    #shuttle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        box-shadow: 0 8px 14px rgba(0, 0, 0, 0.10), 0 2px 8px rgba(0, 0, 0, 0.10);
+        list-style: none;
+    }
+
+    .navbar li {
+        margin-right: 20px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .active-link {
+        position: relative;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .active-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14px;
+        height: 2px;
+        background-color: #007bff;
+    }
+</style>
+
+<!-- HTML -->
+<ul class="navbar">
+    <!-- Shuttle a sinistra -->
+    <li id="shuttle">
+        <img src="../assets/shuttle.png" width="40">
+    </li>
+
+    <!-- Menu a destra -->
+    <div class="menu">
+        <li>
+            <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li *ngFor="let remote of remotes">
+            <a [routerLink]="remote.routePath" routerLinkActive="active-link">{{remote.displayName}}</a>
+        </li>
+        <li>
+            <a routerLink="/config" routerLinkActive="active-link">Config</a>
+        </li>
+    </div>
+</ul>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,10 @@
+{
+	"welcome": {
+		"remoteEntry": "http://localhost:4203/remoteEntry.js",
+
+		"exposedModule": "./Module",
+		"displayName": "welcome",
+		"routePath": "welcome",
+		"ngModuleName": "WelcomeModule"
+	}
+}
