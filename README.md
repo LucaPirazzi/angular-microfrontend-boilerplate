@@ -1,4 +1,4 @@
-# Guida all'Installazione dell'applicazione Micro-frontend angular-microfrontend-boilerplate
+# Guida all'Installazione dell'applicazione Micro-Frontend angular-microfrontend-boilerplate
 
 Questa guida ti accompagnerà attraverso i passaggi necessari per installare e utilizzare il boilerplate per Micro-Frontend `angular-microfrontend-boilerplate`.
 
@@ -19,7 +19,7 @@ Questa guida ti accompagnerà attraverso i passaggi necessari per installare e u
 | zone.js                               | ~0.11.4   |
 | node.js                               | ~16.20.2  |
 
-**NB**: Assicurati di avere installato la versione di Node.js corretta: (16.20.0).
+**NB**: Assicurati di avere installato la versione di Node.js corretta: (16.20.2).
 
 
 ## 1. Installazione delle dipendenze
