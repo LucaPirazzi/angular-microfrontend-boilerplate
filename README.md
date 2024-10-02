@@ -40,5 +40,5 @@ Questa guida ti accompagnerà attraverso i passaggi necessari per installare e u
   npm start
 ```
 
-![Esempio di Immagine](assets/MFE-2.png)
+![Esempio di Immagine](assets/MFE-3.png)
 
